@@ -1,4 +1,4 @@
-// menu button //
+// Menu Button
 .menu-btn {
 	position: absolute;
 	z-index: 3;
@@ -7,36 +7,38 @@
 	cursor: pointer;
 	@include easeOut;
 
-	// button line //
 	.btn-line {
-		width: 25px;
+		width: 28px;
 		height: 3px;
 		margin: 0 0 5px 0;
 		background: $text-color;
 		@include easeOut;
 	}
-	// rotate into x
+
+	// Rotate Into X With Menu Lines
 	&.close {
 		transform: rotate(180deg);
+
 		.btn-line {
-			// line one
+			// Line 1 - Rotate
 			&:nth-child(1) {
 				transform: rotate(45deg) translate(5px, 5px);
 			}
-			// line two
+
+			// Line 2 - Hide
 			&:nth-child(2) {
 				opacity: 0;
 			}
-			// line three
+
+			// Line 3 - Rotate
 			&:nth-child(3) {
 				transform: rotate(-45deg) translate(7px, -6px);
 			}
 		}
 	}
 }
-// menu button //
 
-// menu overlay //
+// Menu Overlay
 .menu {
 	position: fixed;
 	top: 0;
@@ -51,7 +53,7 @@
 	&-branding,
 	&-nav {
 		display: flex;
-		flex-direction: column;
+		flex-flow: column wrap;
 		align-items: center;
 		justify-content: center;
 		float: left;
@@ -69,11 +71,12 @@
 		@include easeOut;
 
 		&.show {
-			// slide it from top
+			// Slide in from top
 			transform: translate3d(0, 0, 0);
 		}
 	}
 
+	// Branding Side
 	&-branding {
 		background: $primary-color;
 		transform: translate3d(0, 100%, 0);
@@ -84,11 +87,10 @@
 			transform: translate3d(0, 0, 0);
 		}
 
-		// styling the picture
 		.portrait {
 			width: 250px;
 			height: 250px;
-			background: url(../img/portrait.jpg);
+			background: url("../img/portrait.jpg");
 			border-radius: 50%;
 			border: solid 3px $secondary;
 		}
@@ -99,6 +101,7 @@
 		@include easeOut;
 
 		&.show {
+			// Slide in from right
 			transform: translate3d(0, 0, 0);
 		}
 
@@ -114,6 +117,8 @@
 		text-transform: uppercase;
 		padding: 1rem 0;
 		font-weight: 300;
+		color: set-text-color($primary-color);
+		text-decoration: none;
 		@include easeOut;
 
 		&:hover {
@@ -121,9 +126,8 @@
 		}
 	}
 }
-// menu overlay //
 
-// delay each nav items slide by 0.1s //
+// Delay each nav item slide by 0.1s
 @for $x from 1 through 4 {
 	.nav-item:nth-child(#{$x}) {
 		transition-delay: $x * 0.1s;
