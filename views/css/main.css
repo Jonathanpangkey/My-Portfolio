@@ -184,7 +184,8 @@ header {
 
 main {
   padding: 3rem;
-  height: 100%; }
+  min-height: calc(100vh - 64px);
+  max-height: 100%; }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -200,7 +201,6 @@ main {
 .about-info {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 5rem;
   gap: 30px; }
   .about-info .bio-image {
     border-radius: 50%;
