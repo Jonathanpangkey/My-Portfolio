@@ -24,7 +24,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.95;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -114,7 +114,11 @@
     .menu-branding .portrait {
       background: url("../img/portrait_small.jpg");
       width: 150px;
-      height: 150px; } }
+      height: 150px; }
+  .about-info {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; } }
 
 @media screen and (max-width: 500px) {
   main h1.lg-heading,
@@ -139,7 +143,8 @@ body {
   body#bg-image {
     background: url(https://source.unsplash.com/1600x900/?minimalist);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    background-position: center; }
     body#bg-image:after {
       content: "";
       position: absolute;
@@ -178,7 +183,7 @@ header {
   color: #90a5c0; }
 
 main {
-  padding: 4rem;
+  padding: 3rem;
   height: 100%; }
   main .icons {
     margin-top: 1rem; }
@@ -190,4 +195,21 @@ main {
   main#home {
     overflow: hidden; }
     main#home h1 {
-      margin-top: 25vh; }
+      margin-top: 20vh; }
+
+.about-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+  gap: 30px; }
+  .about-info .bio-image {
+    border-radius: 50%;
+    border: solid 3px #90a5c0;
+    margin: auto; }
+  .about-info .bio {
+    font-size: 1.3rem; }
+
+#main-footer {
+  text-align: center;
+  padding: 2rem;
+  background: #8098b7; }

@@ -15,12 +15,11 @@
 		}
 	}
 
-    // set overlay size and position
+	// set overlay size and position
 	.menu-nav,
 	.menu-branding {
 		float: none;
 		width: 100%;
-
 
 		&.show {
 			transform: translate3d(0, 0, 0);
@@ -42,6 +41,13 @@
 			width: 150px;
 			height: 150px;
 		}
+	}
+
+	// about page direction from row to column
+	.about-info {
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
 	}
 }
 //  Smartphone
