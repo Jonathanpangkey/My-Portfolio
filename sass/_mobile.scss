@@ -1,14 +1,14 @@
 //  Widecreesns
 @include mediaXl {
 	.project {
-		grid-template-columns: repeat(4,1fr); // display four project
+		grid-template-columns: repeat(4, 1fr); // display four project
 	}
 }
 //  Dekstop
 @include mediaLg {
 	.project {
-		grid-template-columns: repeat(3,1fr); //display three project
-	}	
+		grid-template-columns: repeat(3, 1fr); //display three project
+	}
 }
 //  Tablet and small laptop
 @include mediaMd {
@@ -57,10 +57,15 @@
 	}
 
 	.project {
-		grid-template-columns: repeat(2,1fr); //display two project
-	}	
+		grid-template-columns: repeat(2, 1fr); //display two project
+	}
 
-
+	// contact page
+	.boxes {
+		div {
+			font-size: 1.4rem;
+		}
+	}
 }
 //  Smartphone
 @include mediaSm {
@@ -78,6 +83,25 @@
 	}
 
 	.project {
-		grid-template-columns: 1fr;
-	}	
+		grid-template-columns: 1fr; //display one project
+	}
+
+	// contact page
+	.boxes {
+		div {
+			font-size: 1rem;
+			padding: 1.4rem 1.8rem;
+			margin-bottom: 3rem;
+			@include easeOut;
+
+			&:hover {
+				padding: 0.4rem 1.3rem;
+				background: $secondary;
+
+				span {
+					color: $text-color;
+				}
+			}
+		}
+	}
 }

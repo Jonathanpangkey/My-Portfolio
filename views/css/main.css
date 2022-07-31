@@ -181,6 +181,24 @@ main {
       border-color: #90a5c0;
       transition: all 0.5s ease; }
 
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 1.7rem;
+    border: solid 3px;
+    padding: 1.4rem 2.4rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease; }
+    .boxes div:hover {
+      padding: 0.4rem 1.4rem;
+      background: #90a5c0; }
+      .boxes div:hover span {
+        color: #e0e1dd; }
+
 .btn, .btn-dark, .btn-light {
   display: block;
   padding: 0.5rem 1rem;
@@ -239,7 +257,9 @@ main {
     justify-content: center;
     width: 100%; }
   .project {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .boxes div {
+    font-size: 1.4rem; } }
 
 @media screen and (max-width: 500px) {
   main h1.lg-heading,
@@ -251,4 +271,14 @@ main {
   main h3.sm-heading {
     font-size: 1.3rem; }
   .project {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes div {
+    font-size: 1rem;
+    padding: 1.4rem 1.8rem;
+    margin-bottom: 3rem;
+    transition: all 0.5s ease; }
+    .boxes div:hover {
+      padding: 0.4rem 1.3rem;
+      background: #90a5c0; }
+      .boxes div:hover span {
+        color: #e0e1dd; } }
