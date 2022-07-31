@@ -1,8 +1,14 @@
 //  Widecreesns
 @include mediaXl {
+	.project {
+		grid-template-columns: repeat(4,1fr); // display four project
+	}
 }
 //  Dekstop
 @include mediaLg {
+	.project {
+		grid-template-columns: repeat(3,1fr); //display three project
+	}	
 }
 //  Tablet and small laptop
 @include mediaMd {
@@ -49,6 +55,12 @@
 		justify-content: center;
 		width: 100%;
 	}
+
+	.project {
+		grid-template-columns: repeat(2,1fr); //display two project
+	}	
+
+
 }
 //  Smartphone
 @include mediaSm {
@@ -64,4 +76,8 @@
 			}
 		}
 	}
+
+	.project {
+		grid-template-columns: 1fr;
+	}	
 }
