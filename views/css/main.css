@@ -90,6 +90,9 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 * {
   box-sizing: border-box; }
 
@@ -187,6 +190,16 @@ main {
     background: #e0e1dd;
     color: black; }
 
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 10px; }
+  .portfolio img {
+    width: 100%;
+    max-width: 150px;
+    max-height: 150px;
+    margin: 1rem auto; }
+
 .boxes {
   display: flex;
   flex-wrap: wrap;
@@ -280,6 +293,9 @@ main {
     font-size: 1.3rem; }
   .project {
     grid-template-columns: 1fr; }
+  .portfolio img {
+    min-width: 240px;
+    min-height: 200px; }
   .boxes div {
     font-size: 1rem;
     padding: 1.4rem 1.8rem;

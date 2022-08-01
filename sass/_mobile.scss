@@ -89,6 +89,13 @@
 		grid-template-columns: 1fr; //display one project
 	}
 
+	.portfolio {
+		img{
+			min-width: 240px;
+			min-height: 200px;
+		}
+	}
+
 	// contact page
 	.boxes {
 		div {
