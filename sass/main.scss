@@ -70,7 +70,7 @@ main {
 	}
 }
 
-// styling about page
+// about page
 .about-info {
 	display: flex;
 	justify-content: space-around;
@@ -103,6 +103,14 @@ main {
 			@include easeOut;
 		}
 	}
+
+	h2 {
+		display: block;
+		padding: 0.3rem;
+		text-align: center;
+		background: $text-color;
+		color: black;
+	}
 }
 
 // contact page
@@ -113,7 +121,7 @@ main {
 	align-items: center;
 	margin-top: 1rem;
 
-	div{
+	div {
 		font-size: 1.7rem;
 		border: solid 3px;
 		padding: 1.4rem 2.4rem;
@@ -124,7 +132,7 @@ main {
 			padding: 0.4rem 1.4rem;
 			background: $secondary;
 
-			span{
+			span {
 				color: $text-color;
 			}
 		}
@@ -138,19 +146,19 @@ main {
 	border: 0;
 	margin-bottom: 0.3rem;
 
-	&:hover{
+	&:hover {
 		background: $secondary;
 	}
 }
 
 .btn-dark {
 	@extend .btn;
-	background: darken($secondary,60);
+	background: darken($secondary, 60);
 }
 
 .btn-light {
 	@extend .btn;
-	background: lighten($secondary,20);
+	background: lighten($secondary, 20);
 	color: black;
 }
 
