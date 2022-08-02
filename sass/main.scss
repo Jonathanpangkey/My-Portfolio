@@ -115,15 +115,15 @@ main {
 
 // skills and certification
 .portfolio {
-	display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-    grid-gap: 10px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	grid-gap: 10px;
 
 	img {
 		width: 100%;
 		max-width: 150px;
 		max-height: 150px;
-		margin : 1rem auto;
+		margin: 1rem auto;
 	}
 }
 

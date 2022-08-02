@@ -85,6 +85,12 @@
 		}
 	}
 
+	.menu {
+		.nav-link {
+			font-size: 26px;
+		}
+	}
+
 	.project {
 		grid-template-columns: 1fr; //display one project
 	}
@@ -93,6 +99,12 @@
 		img{
 			min-width: 240px;
 			min-height: 200px;
+		}
+	}
+
+	.about-info {
+		.bio {
+			font-size: 0.9rem;
 		}
 	}
 
