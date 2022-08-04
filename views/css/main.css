@@ -188,6 +188,7 @@ main {
     padding: 0.3rem;
     text-align: center;
     background: #e0e1dd;
+    border-radius: 10px 10px 0 0;
     color: black; }
 
 .portfolio {
@@ -227,7 +228,8 @@ main {
     background: #90a5c0; }
 
 .btn-dark {
-  background: #0b0e13; }
+  background: #0b0e13;
+  border-radius: 0 0 10px 10px; }
 
 .btn-light {
   background: #d1dae5;
@@ -295,9 +297,9 @@ main {
     font-size: 26px; }
   .project {
     grid-template-columns: 1fr; }
-  .portfolio img {
-    min-width: 240px;
-    min-height: 200px; }
+  .certificate img {
+    min-width: 220px;
+    min-height: 150px; }
   .about-info .bio {
     font-size: 0.9rem; }
   .boxes div {

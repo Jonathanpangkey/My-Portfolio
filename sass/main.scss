@@ -109,6 +109,7 @@ main {
 		padding: 0.3rem;
 		text-align: center;
 		background: $text-color;
+		border-radius: 10px 10px 0 0;
 		color: black;
 	}
 }
@@ -168,6 +169,7 @@ main {
 .btn-dark {
 	@extend .btn;
 	background: darken($secondary, 60);
+	border-radius: 0 0 10px 10px;
 }
 
 .btn-light {
