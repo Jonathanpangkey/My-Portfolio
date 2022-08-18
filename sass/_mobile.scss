@@ -8,6 +8,10 @@
 @include mediaLg {
 	.project {
 		grid-template-columns: repeat(3, 1fr); //display three project
+		p,
+		.btn {
+			font-size: 14px;
+		}
 	}
 }
 //  Tablet and small laptop
@@ -61,6 +65,7 @@
 		h2 {
 			font-size: 1.2rem;
 		}
+		
 	}
 
 	// contact page
@@ -93,6 +98,10 @@
 
 	.project {
 		grid-template-columns: 1fr; //display one project
+		p,
+		.btn {
+			font-size: 12px;
+		}
 	}
 
 	.certificate {

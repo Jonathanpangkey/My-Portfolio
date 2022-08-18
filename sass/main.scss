@@ -93,24 +93,36 @@ main {
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 0.7rem;
 
+	.item{
+		background: $text-color;
+		color: $primary-color;
+		border-radius: 1rem;
+		padding: 1rem;
+		
+
+		.techstack{
+			background: darken($text-color,30);
+			display: inline-block;
+			padding: 5px;
+			border-radius: 3px;
+			margin-bottom: 10px;
+			font-size: 11px;
+
+			i{
+				margin-left: px;
+			}
+		}
+	}
+	
 	img {
 		width: 100%;
-		border: solid 3px $text-color;
+		margin: 10px 9px 0 0;
 
 		&:hover {
 			opacity: 0.7;
 			border-color: $secondary;
 			@include easeOut;
 		}
-	}
-
-	h2 {
-		display: block;
-		padding: 0.3rem;
-		text-align: center;
-		background: $text-color;
-		border-radius: 10px 10px 0 0;
-		color: black;
 	}
 }
 
@@ -156,7 +168,8 @@ main {
 
 // button styles
 .btn {
-	display: block;
+	display: inline-block;
+	border-radius: 5px;
 	padding: 0.5rem 1rem;
 	border: 0;
 	margin-bottom: 0.3rem;
@@ -169,7 +182,7 @@ main {
 .btn-dark {
 	@extend .btn;
 	background: darken($secondary, 60);
-	border-radius: 0 0 10px 10px;
+
 }
 
 .btn-light {
