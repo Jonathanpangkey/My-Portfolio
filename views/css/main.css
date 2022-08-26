@@ -53,9 +53,8 @@
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
     .menu-branding .portrait {
-      width: 250px;
-      height: 250px;
-      background: url("../img/nathan.jpg");
+      width: 350px;
+      height: 350px;
       border-radius: 50%;
       border: solid 3px #90a5c0; }
   .menu .nav-item {
@@ -169,6 +168,7 @@ main {
   .about-info .bio-image {
     border-radius: 50%;
     border: solid 3px #90a5c0;
+    width: 300px;
     margin: auto; }
   .about-info .bio {
     font-size: 1.3rem; }
@@ -283,9 +283,8 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/nathansmall.jpg");
-      width: 150px;
-      height: 150px; }
+      width: 160px;
+      height: 160px; }
   .about-info {
     flex-direction: column;
     justify-content: center;
