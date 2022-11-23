@@ -36,7 +36,8 @@
 .menu.show {
   visibility: visible;
 }
-.menu-branding, .menu-nav {
+.menu-branding,
+.menu-nav {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
@@ -273,13 +274,17 @@ main#home h1 {
   color: #e0e1dd;
 }
 
-.btn, .btn-light, .btn-dark {
+.btn,
+.btn-light,
+.btn-dark {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
 }
-.btn:hover, .btn-light:hover, .btn-dark:hover {
+.btn:hover,
+.btn-light:hover,
+.btn-dark:hover {
   background: #90a5c0;
 }
 
@@ -319,12 +324,12 @@ main#home h1 {
     margin-bottom: 2rem;
   }
   .menu-nav,
-.menu-branding {
+  .menu-branding {
     float: none;
     width: 100%;
   }
   .menu-nav.show,
-.menu-branding.show {
+  .menu-branding.show {
     transform: translate3d(0, 0, 0);
   }
   .menu-nav {
@@ -358,13 +363,13 @@ main#home h1 {
 }
 @media screen and (max-width: 500px) {
   main h1.lg-heading,
-main h2.lg-heading,
-main h3.lg-heading {
+  main h2.lg-heading,
+  main h3.lg-heading {
     font-size: 3.5rem;
   }
   main h1.sm-heading,
-main h2.sm-heading,
-main h3.sm-heading {
+  main h2.sm-heading,
+  main h3.sm-heading {
     font-size: 1.3rem;
   }
   .menu .nav-link {
@@ -393,4 +398,4 @@ main h3.sm-heading {
   .boxes div:hover span {
     color: #e0e1dd;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
